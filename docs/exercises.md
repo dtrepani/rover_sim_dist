@@ -95,6 +95,7 @@ Assume the rover starts at 0% state of charge in the morning, and the rover is p
 Assume a Martian day is 24 hours, 37 minutes, and 22 seconds long.
 
 # API Reference
+### - `GET /health` - returns a status code indicating the server is running and reachable.
 ### - `GET /exercises` - returns a list of exercises with their details - The exercise parameters change every time the server is restarted.
 ### - `GET /rover/config` - returns the rover configuration - The rover configuration changes every time the server is restarted.
 ### - `POST /verify/fixed_distance` - takes in a rover command and returns a status code and message indicating whether the command was successful or not.
