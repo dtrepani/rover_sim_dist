@@ -28,3 +28,6 @@ To test if the server is running, open your browser and navigate to `http://loca
 ```
 
 If you see this response, the server is running and you can begin the [exercises](/docs/exercises)!
+
+### Shutdown
+To stop the server, run `docker-compose down` in the root of the project.
