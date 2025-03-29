@@ -1,0 +1,9 @@
+services:
+  rover_sim:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: rover_sim_image
+    container_name: rover_sim
+    ports:
+      - "8080:8080"
