@@ -1,4 +1,4 @@
-# Rover Sim Binary
+# Rover Sim
 
 ### Prerequisites
 To complete these exercises you will need:
