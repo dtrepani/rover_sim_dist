@@ -4,7 +4,7 @@
 To complete these exercises you will need:
 - Rust: <https://www.rust-lang.org/tools/install>
 - Docker: <https://www.docker.com/get-started>
-    - You can also use one of these open-source alternatives if you prefer
+    - You may also use one of these open-source alternatives if you prefer
         - Podman: <https://podman.io/docs/installation>
         - Rancher Desktop: <https://rancherdesktop.io/>
 - GitHub Account: <https://github.com/signup>
