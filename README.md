@@ -16,7 +16,7 @@ To complete these exercises you will need:
 
 
 ### Startup
-Fork this repository and clone it to your local machine.
+Clone this repository to your local machine.
 
 Run `docker-compose up -d` in the root of the project to start the Rover Sim.
 
