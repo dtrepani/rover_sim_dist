@@ -23,7 +23,7 @@ Run `docker-compose up -d` in the root of the project to start the Rover Sim.
 To test if the server is running, open your browser and navigate to `http://localhost:8080/health`. You should see a JSON response with the following content:
 ```json
 {
-    "status": "ok"
+    "status": "Ok"
 }
 ```
 
