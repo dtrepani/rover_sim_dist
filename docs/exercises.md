@@ -12,7 +12,8 @@ At this early stage, the `rover_sim` is very simple and makes the following assu
 - All gear ratios provided reduce the speed of the wheel relative to the motor speed.
 - The batteries on the rover can be charged at any rate and have perfectly linear voltage and current curves.
 - The batteries can be safely discharged to 0% and charged to 100%.
-- The batteries can supply a maximum voltage defined in the rover configuration.
+- The batteries can supply a maximum voltage defined in the rover configuration (All batteries have the same maximum voltage).
+- The batteries are connected in parallel and act as a single larger battery.
 - For units, assume the following:
     - Distances are in `millimeters` (mm)
     - Voltages are in `volts` (V)
@@ -27,7 +28,9 @@ At this early stage, the `rover_sim` is very simple and makes the following assu
     - Efficiency is a fraction between 0 and 1
     - KV rating is in `RPM/volt` (RPM/V)
 
-Write an application in Rust that solves as many of the following exercises as possible within the allotted time.
+_**Write an application in Rust that solves as many of the following exercises as possible within the allotted time.**_
+
+_**Create a GitHub repo for your solution and share it with jplatnerFTI, dkhawajafaithtechinc, and HAyers4739.**_
 
 ## 1. Fixed distance rover command
 Generate a command that moves the rover a fixed distance provided by the `fixed_distance` value in `GET /exercises`.
@@ -80,19 +83,21 @@ Post the distance to the `POST /verify/fixed_capacity` endpoint. The server will
 ## 3. Fixed solar irradiance travel speed
 The rover also has solar panels. Assume the rover starts at 0% state of charge.
 
-Using the `fixed_solar_irradiance` value in `GET /exercises`, determine the maximum speed in `mm/s` the rover can maintain indefinitely with the solar panels generating power.
+Using the `fixed_irradiance` value in `GET /exercises`, determine the maximum speed in `mm/s` the rover can maintain indefinitely with the solar panels generating power.
 
 Be sure to account for the efficiency of the solar panels and the maximum voltage of the batteries.
-Post the speed to the `POST /verify/fixed_solar_irradiance` endpoint. The server will respond with a status code and message indicating whether the speed can be maintained indefinitely with the solar irradiance.
+Post the speed to the `POST /verify/fixed_irradiance` endpoint. The server will respond with a status code and message indicating whether the speed can be maintained indefinitely with the solar irradiance.
 
 ## 4. Variable solar irradiance travel distance
 The solar irradiance is no longer fixed - it starts at 0 `W/m^2` in the morning, increases sinusoidally to a maximum amplitude at 'noon', and then decreases back to 0 `W/m^2` at 'night'.
 
-Using the `sinusoidal_solar_irradiance` value in `GET /exercises` as the peak amplitude of the solar irradiance, determine the maximum distance in `km` the rover can travel each day given the solar irradiance.
+Using the `variable_irradiance` value in `GET /exercises` as the peak amplitude of the solar irradiance, determine the maximum distance in `km` the rover can travel each day given the solar irradiance.
 
 Assume the rover starts at 0% state of charge in the morning, and the rover is positioned on the equator.
 
 Assume a Martian day is 24 hours, 37 minutes, and 22 seconds long.
+
+Post the distance to the `POST /verify/variable_irradiance` endpoint. The server will respond with a status code and message indicating whether the distance is correct
 
 # API Reference
 ### - `GET /health` - returns a status code indicating the server is running and reachable.
@@ -100,5 +105,5 @@ Assume a Martian day is 24 hours, 37 minutes, and 22 seconds long.
 ### - `GET /rover/config` - returns the rover configuration - The rover configuration changes every time the server is restarted.
 ### - `POST /verify/fixed_distance` - takes in a rover command and returns a status code and message indicating whether the command was successful or not.
 ### - `POST /verify/fixed_capacity` - takes in a distance (`float`) and returns a status code and message indicating whether the distance is within the rover's capacity or not.
-### - `POST /verify/fixed_solar_irradiance` - takes in a speed (`float`) and returns a status code and message indicating whether the speed can be maintained indefinitely with the exercise's solar irradiance or not.
-### - `POST /verify/sinusoidal_solar_irradiance` - takes in a distance (`float`) and returns a status code and message indicating whether the distance can be covered each day given the exercise's solar irradiance or not.
+### - `POST /verify/fixed_irradiance` - takes in a speed (`float`) and returns a status code and message indicating whether the speed can be maintained indefinitely with the exercise's solar irradiance or not.
+### - `POST /verify/variable_irradiance` - takes in a distance (`float`) and returns a status code and message indicating whether the distance can be covered each day given the exercise's solar irradiance or not.
