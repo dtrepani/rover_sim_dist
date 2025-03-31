@@ -9,7 +9,7 @@ To complete these exercises you will need:
         - Rancher Desktop: <https://rancherdesktop.io/>
 - GitHub Account: <https://github.com/signup>
 - VS Code (or any other code editor you prefer) <https://code.visualstudio.com/download>
-- An API Explorer
+- An API Explorer (Optional but recommended)
     - Bruno: <https://www.usebruno.com/>
     - Postman: <https://www.postman.com/downloads/>
     - Insomnia: <https://insomnia.rest/download>
