@@ -28,7 +28,8 @@ At this early stage, the `rover_sim` is very simple and makes the following assu
     - Efficiency is a fraction between 0 and 1
     - KV rating is in `RPM/volt` (RPM/V)
 
-Write an application in Rust that solves as many of the following exercises as possible within the allotted time.
+__**Write an application in Rust that solves as many of the following exercises as possible within the allotted time.**__
+__**Create a GitHub repo for your solution and share it with jplatnerFTI, dkhawajafaithtechinc, and HAyers4739**__
 
 ## 1. Fixed distance rover command
 Generate a command that moves the rover a fixed distance provided by the `fixed_distance` value in `GET /exercises`.
