@@ -5,8 +5,8 @@ To complete these exercises you will need:
 - Rust: <https://www.rust-lang.org/tools/install>
 - Docker: <https://www.docker.com/get-started> - _Note that docker (or any of the alternatives) will require WSL2 on Windows operating systems._
     - You may also use one of these open-source alternatives if you prefer
-        - Podman: <https://podman.io/docs/installation>
         - Rancher Desktop: <https://rancherdesktop.io/>
+        - _Note: Podman is technically an option but is a pain to set up with docker-compose, which is used later on._
 - GitHub Account: <https://github.com/signup>
 - VS Code (or any other code editor you prefer) <https://code.visualstudio.com/download>
 - An API Explorer (Optional but recommended)
