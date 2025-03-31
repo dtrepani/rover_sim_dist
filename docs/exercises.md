@@ -12,7 +12,7 @@ At this early stage, the `rover_sim` is very simple and makes the following assu
 - All gear ratios provided reduce the speed of the wheel relative to the motor speed.
 - The batteries on the rover can be charged at any rate and have perfectly linear voltage and current curves.
 - The batteries can be safely discharged to 0% and charged to 100%.
-- The batteries can supply a maximum voltage defined in the rover configuration.
+- The batteries can supply a maximum voltage defined in the rover configuration (All batteries have the same maximum voltage).
 - The batteries are connected in parallel and act as a single larger battery.
 - For units, assume the following:
     - Distances are in `millimeters` (mm)
