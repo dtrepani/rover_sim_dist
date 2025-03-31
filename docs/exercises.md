@@ -31,7 +31,7 @@ At this early stage, the `rover_sim` is very simple and makes the following assu
 Write an application in Rust that solves as many of the following exercises as possible within the allotted time.
 
 ## 1. Fixed distance rover command
-Generate a command that moves the rover a fixed distance provided by the `fixed_distance` value in `GET /exercises` in the lowest time possible.
+Generate a command that moves the rover a fixed distance provided by the `fixed_distance` value in `GET /exercises`.
 A command is a JSON object with the following fields:
 ```json
 {
