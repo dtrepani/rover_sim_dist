@@ -13,6 +13,7 @@ At this early stage, the `rover_sim` is very simple and makes the following assu
 - The batteries on the rover can be charged at any rate and have perfectly linear voltage and current curves.
 - The batteries can be safely discharged to 0% and charged to 100%.
 - The batteries can supply a maximum voltage defined in the rover configuration.
+- The batteries are connected in parallel and act as a single larger battery.
 - For units, assume the following:
     - Distances are in `millimeters` (mm)
     - Voltages are in `volts` (V)
