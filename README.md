@@ -3,7 +3,7 @@
 ### Prerequisites
 To complete these exercises you will need:
 - Rust: <https://www.rust-lang.org/tools/install>
-- Docker: <https://www.docker.com/get-started>
+- Docker: <https://www.docker.com/get-started> - _Note that docker (or any of the alternatives) will require WSL2 on Windows operating systems._
     - You may also use one of these open-source alternatives if you prefer
         - Podman: <https://podman.io/docs/installation>
         - Rancher Desktop: <https://rancherdesktop.io/>
