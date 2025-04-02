@@ -28,7 +28,7 @@ At this early stage, the `rover_sim` is very simple and makes the following assu
     - Efficiency is a fraction between 0 and 1
     - KV rating is in `RPM/volt` (RPM/V)
 
-_**Write an application in Rust that solves as many of the following exercises as possible within the allotted time.**_
+_**Write an application in your preferred language that solves as many of the following exercises as possible within the allotted time.**_
 
 _**Create a GitHub repo for your solution and share it with jplatnerFTI, dkhawajafaithtechinc, and HAyers4739.**_
 
