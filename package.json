@@ -1,0 +1,16 @@
+{
+  "name": "rover_sim_dist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "author": "Desiree Trepanier",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}
