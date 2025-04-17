@@ -1,5 +1,10 @@
 # Rover Sim
 
+### Notes
+I was not able to figure out how to solve the math problems themselves, but I've added what I did know to the best of my ability.
+
+---
+
 ### Prerequisites
 To complete these exercises you will need:
 - Your preferred language toolchain
